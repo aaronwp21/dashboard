@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins', sans-serif;;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(180, 100%, 50%);
+  padding-block: 1.5rem;
+  margin-block-end: 4rem;
+}
+
+.heading {
+  margin: 0;
+}
+
+.main-wrapper {
+  width: 90%;
+  margin: auto;
+  border: 1px solid hsl(0, 0%, 0%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-block-end: 2rem;
+  overflow: auto;
+}
+
+.date-container {
+  border-inline-end: 1px solid hsl(0, 0%, 0%);
+  border-block-end: 1px solid hsl(0, 0%, 0%);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-container p {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  margin: 0;
+}
+
+.weather-container {
+  padding: 1rem;
+  border-block-end: 1px solid hsl(0, 0%, 0%);
+}
+
+.location-container {
+  margin-block-end: 5rem;
+}
+
+.location-container p:nth-child(1){
+  margin-block-end: 2rem;
+}
+
+.current-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-titles {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.weather-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 2rem;
+}
+
+.section-info {
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  margin: 0;
+}
+
+.sunrise-sunset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sunrise {
+  margin-block-end: 1.5rem;
+}
+
+.daily-joke-container {
+  padding: 1rem;
+  border-inline-end: 1px solid hsl(0, 0%, 0%);
+}
+
+.daily-joke-container p:nth-child(1){
+  margin-block-end: 5rem;
+}
+
+.daily-joke-container p:nth-child(2){
+  margin-block-end: 3rem;
+}
+
+.section-button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: hsl(180, 100%, 50%);
+}
+
+.joke-answer {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: hsl(0, 100%, 50%);
+}
+
+.football-container {
+  padding: 1rem;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 6rem;
+  margin-block-end: 2rem;
+}
+
+.team-container {
+  max-width: 150px;
+}
+
+.team-name {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem)
+}
+
+.team-image {
+  width: 25%;
+}
+
+.versus {
+  align-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .daily-joke-container {
+    border-inline-end: none;
+    border-block-end: 1px solid black;
+  }
+}
