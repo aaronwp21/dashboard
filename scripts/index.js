@@ -155,7 +155,7 @@ async function getFootball() {
   showSpinner(footballWrapper);
   try {
     const response = await fetch(
-      `https://v3.football.api-sports.io/fixtures?league=39&season=2022&next=7`,
+      `https://v3.football.api-sports.io/fixtures?league=39&season=2023&next=7`,
       {
         method: 'GET',
         headers: {
